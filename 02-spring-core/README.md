@@ -39,3 +39,11 @@ Bootstrap the application - creates application context, registers all beans and
 
 ### @Lazy - Class level:
 - Tells the Spring to create bean for this class only when needed for dependency injection or explicitly requested.
+
+### Bean Scopes(Singleton by default):
+Refers to the lifecycle of a bean
+- How long does the bean live?
+- How may instances are created?
+- How is the bean shared?
+
+![img.png](img.png)
