@@ -56,3 +56,10 @@ Refers to the lifecycle of a bean
 
 ### @PreDestroy - Method level:
 - Used to call custom code during bean destruction.
+
+### @Bean - Method level:
+- Used to configure an object as Spring bean.
+- Make an existing third-party class available to Spring framework.
+
+### @Configuration - Class level:
+- Classes annotated with this config can generate Spring beans.
