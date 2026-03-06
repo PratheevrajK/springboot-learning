@@ -21,9 +21,18 @@ public class ScopeTestController {
         System.out.println("In Constructor: " + getClass().getSimpleName());
     }
 
+    //2026-03-06T21:37:34.543+05:30  INFO 36836 --- [springcoredemo] [  restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.18]
+    //2026-03-06T21:37:34.591+05:30  INFO 36836 --- [springcoredemo] [  restartedMain] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 1252 ms
+    //In Constructor: CricketCoach
+    //In Constructor: FootballCoach
+    //In Constructor: DemoController
+    //In Constructor: TennisCoach
+    //In Constructor: TennisCoach
+    //In Constructor: ScopeTestController
+
     @GetMapping("/doubleworkout")
     public String getWorkOut() {
-        System.out.println(myCoach == anotherCoach); // true for Singleton and false for
+        System.out.println(myCoach == anotherCoach); // true for Singleton and false for Prototype.
         System.out.println(anotherCoach.getDailyWorkout());
         return myCoach.getDailyWorkout();
     }

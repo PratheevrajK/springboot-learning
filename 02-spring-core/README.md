@@ -47,3 +47,12 @@ Refers to the lifecycle of a bean
 - How is the bean shared?
 
 ![img.png](img.png)
+
+### Bean lifecycle:
+![img_1.png](img_1.png)
+
+### @PostConstruct - Method level:
+- Used to call custom code during bean initialization.
+
+### @PreDestroy - Method level:
+- Used to call custom code during bean destruction.
