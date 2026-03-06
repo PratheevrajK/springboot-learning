@@ -11,6 +11,7 @@
 ### Two recommended types of Injection:
 - Constructor Injection
 - Setter Injection
+- Field Injection (not recommended) Accomplished by Java Reflection.
 
 ### Spring AutoWiring:
 - Autowiring is used for injecting dependencies.
@@ -19,7 +20,7 @@
 ### @Component - Class level:
 - Marks the class as Spring Bean making the class available for Dependency Injection.
 
-### @Autowired - Constructor level:
+### @Autowired - Constructor/method level:
 - Tells the Spring to inject the dependency.
 
 ### @SpringBootApplication - Class level:
@@ -27,3 +28,14 @@ Bootstrap the application - creates application context, registers all beans and
 - `@EnableAutoConfiguration` Enables SpringBoot's auto-configuration support.
 - `@ComponentScan` Enables component scanning of current package. Also, recursively scans sub-packages.
 - `@Configuration` Able to register extra beans with `@Bean` or import other configuration classes.
+
+### @Qualifier - Parameter level:
+- Tells the Spring which bean to inject, in case of multiple eligible beans.
+- `@Qualifier` has higher priority than `@Primary`
+
+### @Primary - Class level:
+- Tells the Spring which bean to inject, in case of multiple eligible beans.
+- At the most, one class can be marked as Primary.
+
+### @Lazy - Class level:
+- Tells the Spring to create bean for this class only when needed for dependency injection or explicitly requested.
