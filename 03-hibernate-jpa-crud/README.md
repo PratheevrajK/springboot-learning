@@ -15,3 +15,4 @@ Database: MySQL, Connection: springstudent, Username: springstudent, Password: s
 - Spring also provides translation of any JDBC related exceptions
 
 
+![img_2.png](img_2.png)

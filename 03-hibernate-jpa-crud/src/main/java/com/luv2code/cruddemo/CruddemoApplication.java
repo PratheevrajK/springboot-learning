@@ -20,7 +20,7 @@ public class CruddemoApplication {
     public CommandLineRunner commandLineRunner(StudentDAO studentDAO) {
         return runner -> {
 //            createStudent(studentDAO);
-//            createMultipleStudent(studentDAO);
+            createMultipleStudent(studentDAO);
 //            Student myStudent = fetchStudentsById(studentDAO, 2);
 //            System.out.println(myStudent); //Student{id=2, firstName='John', lastName='Cena', email='john.cena@email.com'}
 //            fetchAllStudents(studentDAO);
